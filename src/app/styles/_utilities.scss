@@ -1,0 +1,59 @@
+@import "./_variables";
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    @media (min-width: $mobile-landscape-breakpoint) {
+        max-width: $mobile-landscape-max-width;
+    }
+    @media (min-width: $tablet-breakpoint) {
+        max-width: $tablet-max-width;
+    }
+    @media (min-width: $tablet-landscape-breakpoint) {
+        max-width: $tablet-landscape-max-width;
+    }
+    @media (min-width: $small-computer-breakpoint) {
+        max-width: $small-computer-max-width;
+    }
+    @media (min-width: $medium-computer-breakpoint) {
+        max-width: $medium-computer-max-width;
+    }
+}
+.grid {
+    display: grid;
+}
+.clearfix {
+    clear: both;
+}
+.responsive-image {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+.card {
+    background-color: var(--white-color);
+    & .card-image {
+        img {
+            @extend .responsive-image;
+        }
+    }
+    & .card-header,
+    & .card-body {
+        padding: 1rem;
+    }
+}
+.button {
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    padding: .5rem 1rem;
+    position: relative;
+    user-select: none;
+    &.block {
+        display: block;
+        width: 100%;
+    }
+}

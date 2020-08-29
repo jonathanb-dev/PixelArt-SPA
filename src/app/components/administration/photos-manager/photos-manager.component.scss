@@ -1,0 +1,31 @@
+@import "../../../styles/variables";
+
+.grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    @media (min-width: $tablet-breakpoint) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: $tablet-landscape-breakpoint) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: $small-computer-breakpoint) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media (min-width: $medium-computer-breakpoint) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+.card-header {
+    h2 {
+        margin: 0;
+    }
+}
+.card-body {
+    p {
+        text-align: justify;
+    }
+    button {
+        float: right;
+    }
+}

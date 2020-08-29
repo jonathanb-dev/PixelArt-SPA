@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./app/styles/_variables";
+@import "./app/styles/_base";
+@import "./app/styles/_utilities";
+
+:root {
+    --lighter-black-color: #101010; // 16, 16, 16
+    --white-color: #fff; // 255, 255, 255
+    --darker-white-color: #f8f8f8; // 248, 248, 248
+}
+body {
+    background-color: var(--darker-white-color);
+    color: var(--lighter-black-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Bebas Neue", "Roboto", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
