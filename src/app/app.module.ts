@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 // Custom modules
 import { AppRoutingModule } from './app-routing.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 // Layouts
 import { EmptyLayoutComponent } from './layouts/empty-layout/empty-layout.component';
@@ -37,7 +38,8 @@ import { PhotosManagerComponent } from './components/administration/photos-manag
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
