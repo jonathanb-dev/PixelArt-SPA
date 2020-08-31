@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-header">
+        <h2>Image title</h2>
+    </div>
+    <div class="card-image">
+        <img [src]="photo.url" alt="Image title" draggable="false">
+    </div>
+    <div class="card-body">
+        <p>Image description</p>
+        <a [routerLink]="[photo.id]" class="button"><fa-icon [icon]="faEdit"></fa-icon>Edit</a>
+        <div class="clearfix"></div>
+    </div>
+</div>

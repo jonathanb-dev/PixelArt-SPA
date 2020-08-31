@@ -3,9 +3,12 @@
 @import "./app/styles/_utilities";
 
 :root {
-    --lighter-black-color: #101010; // 16, 16, 16
+    --primary-color: #4169e1; // 65, 105, 225
+    --primary-color-shade10: #3b5fcb; // 59, 95, 203
+    --lighter-black-color: #303030; // 48, 48, 48
     --white-color: #fff; // 255, 255, 255
-    --darker-white-color: #f8f8f8; // 248, 248, 248
+    --darker-white-color: #f0f0f0; // 240, 240, 240
+    --lighter-gray-color: #b0b0b0; // 176, 176, 176
 }
 body {
     background-color: var(--darker-white-color);
@@ -24,6 +27,10 @@ h6 {
     font-family: "Bebas Neue", "Roboto", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
+}
+::placeholder {
+    color: var(--lighter-gray-color);
+    opacity: 1;
 }
 // Font awesome
 .ng-fa-icon {

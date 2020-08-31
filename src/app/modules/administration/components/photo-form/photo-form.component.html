@@ -1,0 +1,16 @@
+<form [formGroup]="photoForm" (ngSubmit)="onSubmit()">
+    <label>
+        Title:
+        <input type="text" placeholder="Your photo title" class="form-control" formControlName="title">
+    </label>
+    <label>
+        Description:
+        <textarea placeholder="Your photo description, e.g., take a look at our beautiful world!" class="form-control" formControlName="description"></textarea>
+    </label>
+    <label>
+        Photo:
+        <input type="file" class="form-control" formControlName="photo">
+    </label>
+    <button type="submit" class="button plain">Upload image</button>
+    <div class="clearfix"></div>
+</form>

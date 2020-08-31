@@ -1,0 +1,15 @@
+.card {
+    .card-header {
+        h2 {
+            margin: 0;
+        }
+    }
+    .card-body {
+        p {
+            text-align: justify;
+        }
+        .button {
+            float: right;
+        }
+    }
+}

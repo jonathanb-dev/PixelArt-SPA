@@ -3,6 +3,8 @@ import { HttpClient } from '@angular/common/http';
 
 import { environment } from 'src/environments/environment';
 
+import { Observable } from 'rxjs';
+
 // Interfaces
 import { IPhoto } from '../interfaces/photo';
 
@@ -12,7 +14,10 @@ import { IPhoto } from '../interfaces/photo';
 export class PhotoService {
   constructor(private http: HttpClient) { }
 
-  getPhotos() {
+  getPhotos(): Observable<IPhoto[]> {
     return this.http.get<IPhoto[]>(environment.apiEndpointUrl + 'photos');
+  }
+
+  postPhoto(): void {
   }
 }

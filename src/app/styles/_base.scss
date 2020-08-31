@@ -6,6 +6,15 @@
 body {
     margin: 0;
 }
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.75rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
 h1,
 h2,
 h3,
@@ -20,10 +29,18 @@ ul {
 a {
     text-decoration: none;
 }
+textarea {
+    resize: vertical;
+}
+input,
+textarea,
 button {
-    color: inherit;
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
     line-height: inherit;
+}
+button,
+img {
+    user-select: none;
 }

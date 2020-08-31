@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-// Font awesome
-import { faImages } from '@fortawesome/free-solid-svg-icons/faImages';
-
 // Services
 import { PhotoService } from 'src/app/services/photo.service';
 
@@ -15,7 +12,6 @@ import { IPhoto } from 'src/app/interfaces/photo';
   styleUrls: ['./photos-manager.component.scss']
 })
 export class PhotosManagerComponent implements OnInit {
-  faImages = faImages;
   photos: IPhoto[] = [];
 
   constructor(private photoService: PhotoService) { }
