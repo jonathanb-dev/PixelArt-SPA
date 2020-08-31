@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PhotosManagerComponent } from './photos-manager.component';
+import { PhotoManagerComponent } from './photo-manager.component';
 
-describe('PhotosManagerComponent', () => {
-  let component: PhotosManagerComponent;
-  let fixture: ComponentFixture<PhotosManagerComponent>;
+describe('PhotoManagerComponent', () => {
+  let component: PhotoManagerComponent;
+  let fixture: ComponentFixture<PhotoManagerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PhotosManagerComponent ]
+      declarations: [ PhotoManagerComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PhotosManagerComponent);
+    fixture = TestBed.createComponent(PhotoManagerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

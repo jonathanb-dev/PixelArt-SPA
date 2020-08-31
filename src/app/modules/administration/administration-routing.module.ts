@@ -7,7 +7,7 @@ import { AdministrationPageComponent } from './pages/administration-page/adminis
 
 // Components
 import { AdministrationComponent } from './components/administration.component';
-import { PhotosManagerComponent } from './components/photos-manager/photos-manager.component';
+import { PhotoManagerComponent } from './components/photo-manager/photo-manager.component';
 import { PhotoFormComponent } from './components/photo-form/photo-form.component';
 
 const administrationRoutes: Routes = [
@@ -21,7 +21,7 @@ const administrationRoutes: Routes = [
         children: [
           {
             path: 'photos',
-            component: PhotosManagerComponent,
+            component: PhotoManagerComponent,
             children: [
               { path: 'new', component: PhotoFormComponent },
               { path: ':id', component: PhotoFormComponent }

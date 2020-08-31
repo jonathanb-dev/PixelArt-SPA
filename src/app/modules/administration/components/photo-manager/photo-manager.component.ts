@@ -7,11 +7,11 @@ import { PhotoService } from 'src/app/services/photo.service';
 import { IPhoto } from 'src/app/interfaces/photo';
 
 @Component({
-  selector: 'app-photos-manager',
-  templateUrl: './photos-manager.component.html',
-  styleUrls: ['./photos-manager.component.scss']
+  selector: 'app-photo-manager',
+  templateUrl: './photo-manager.component.html',
+  styleUrls: ['./photo-manager.component.scss']
 })
-export class PhotosManagerComponent implements OnInit {
+export class PhotoManagerComponent implements OnInit {
   photos: IPhoto[] = [];
 
   constructor(private photoService: PhotoService) { }
