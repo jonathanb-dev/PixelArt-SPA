@@ -15,7 +15,9 @@ import { PhotoManagerComponent } from './components/photo-manager/photo-manager.
 import { PhotoListComponent } from './components/photo-manager/photo-list/photo-list.component';
 import { PhotoItemComponent } from './components/photo-manager/photo-list/photo-item/photo-item.component';
 import { PhotoListFiltersComponent } from './components/photo-manager/photo-list-filters/photo-list-filters.component';
-import { PhotoFormComponent } from './components/photo-form/photo-form.component';
+import { PhotoUploaderComponent } from './components/photo-uploader/photo-uploader.component';
+import { PhotoEditorComponent } from './components/photo-editor/photo-editor.component';
+import { PhotoFormComponent } from './components/photo-editor/photo-form/photo-form.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { PhotoFormComponent } from './components/photo-form/photo-form.component
     PhotoListComponent,
     PhotoItemComponent,
     PhotoListFiltersComponent,
+    PhotoUploaderComponent,
+    PhotoEditorComponent,
     PhotoFormComponent
   ],
   imports: [

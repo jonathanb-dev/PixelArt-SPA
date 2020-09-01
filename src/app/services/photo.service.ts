@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpEvent } from '@angular/common/http';
 
 import { environment } from 'src/environments/environment';
 
@@ -18,6 +18,10 @@ export class PhotoService {
     return this.http.get<IPhoto[]>(environment.apiEndpointUrl + 'photos');
   }
 
-  postPhoto(): void {
+  uploadPhoto(formData: FormData): Observable<HttpEvent<IPhoto>> {
+    return this.http.post<IPhoto>(environment.apiEndpointUrl + 'photos', formData, {
+      reportProgress: true,
+      observe: 'events'
+    });
   }
 }

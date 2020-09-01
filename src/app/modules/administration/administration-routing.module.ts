@@ -8,7 +8,8 @@ import { AdministrationPageComponent } from './pages/administration-page/adminis
 // Components
 import { AdministrationComponent } from './components/administration.component';
 import { PhotoManagerComponent } from './components/photo-manager/photo-manager.component';
-import { PhotoFormComponent } from './components/photo-form/photo-form.component';
+import { PhotoUploaderComponent } from './components/photo-uploader/photo-uploader.component';
+import { PhotoEditorComponent } from './components/photo-editor/photo-editor.component';
 
 const administrationRoutes: Routes = [
   {
@@ -23,8 +24,8 @@ const administrationRoutes: Routes = [
             path: 'photos',
             component: PhotoManagerComponent,
             children: [
-              { path: 'new', component: PhotoFormComponent },
-              { path: ':id', component: PhotoFormComponent }
+              { path: 'upload', component: PhotoUploaderComponent },
+              { path: ':id', component: PhotoEditorComponent }
             ]
           }
         ]

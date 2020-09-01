@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+
+// Interfaces
+import { IPutPhoto } from 'src/app/interfaces/putPhoto';
 
 @Component({
   selector: 'app-photo-form',
@@ -8,6 +11,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class PhotoFormComponent implements OnInit {
   photoForm: FormGroup;
+  @Output() formSubmit = new EventEmitter<IPutPhoto>();
 
   constructor() { }
 
@@ -18,11 +22,13 @@ export class PhotoFormComponent implements OnInit {
   initForm(): void {
     this.photoForm = new FormGroup({
       'title': new FormControl(null, Validators.required),
-      'description': new FormControl(null),
-      'photo': new FormControl(null, Validators.required)
+      'description': new FormControl(null)
     });
   }
-
+  
   onSubmit(): void {
+    if (this.photoForm.valid) {
+      this.formSubmit.emit(this.photoForm.value);
+    }
   }
 }

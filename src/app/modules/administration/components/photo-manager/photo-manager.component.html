@@ -2,7 +2,7 @@
     <div class="container">
         <div class="flex">
             <h1>Photo manager</h1>
-            <a [routerLink]="['/administration/photos/new']" class="button plain">Add new photo</a>
+            <a [routerLink]="['/administration/photos/upload']" class="button plain"><fa-icon [icon]="faFileUpload"></fa-icon>Upload photo</a>
         </div>
         <app-photo-list-filters></app-photo-list-filters>
         <app-photo-list [photos]="photos"></app-photo-list>
